@@ -1,0 +1,161 @@
+22:33:53.399 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+22:33:53.417 [pool-1-thread-1] INFO  com.intuit.karate - found scenario at line: 19 - ^View PUP Academic Year 2022\-2023 \- .*$
+22:33:53.678 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+22:33:53.793 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate.shell.Command - found / verified free local port: 9515
+22:33:53.794 [chromedriver_1659850433791] DEBUG c.i.k.d.chromedriver_1659850433791 - command: [C:/Program Files/Google/Chrome/Application/chromedriver.exe, --port=9515, --user-data-dir=C:\Users\UNIT\Documents\GitHub\AutomationTesting\target\chromedriver_1659850433791]
+22:33:53.808 [ForkJoinPool-1-worker-3] DEBUG c.i.k.d.chromedriver_1659850433791 - poll attempt #0 for port to be ready - localhost:9515
+22:33:54.066 [ForkJoinPool-1-worker-3] DEBUG c.i.k.d.chromedriver_1659850433791 - poll attempt #1 for port to be ready - localhost:9515
+22:33:54.077 [chromedriver_1659850433791-out] DEBUG c.i.k.d.chromedriver_1659850433791 - Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 9515
+22:33:54.078 [chromedriver_1659850433791-out] DEBUG c.i.k.d.chromedriver_1659850433791 - Only local connections are allowed.
+22:33:54.078 [chromedriver_1659850433791-out] DEBUG c.i.k.d.chromedriver_1659850433791 - Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+22:33:54.087 [chromedriver_1659850433791-out] DEBUG c.i.k.d.chromedriver_1659850433791 - ChromeDriver was started successfully.
+22:33:54.317 [ForkJoinPool-1-worker-3] DEBUG c.i.k.d.chromedriver_1659850433791 - poll attempt #2 for port to be ready - localhost:9515
+22:33:54.972 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9515/session
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 57
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:9515
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.16)
+{"capabilities":{"alwaysMatch":{"browserName":"chrome"}}}
+
+22:33:56.178 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - response time in milliseconds: 1198.93
+1 < 200
+1 < Content-Length: 790
+1 < Content-Type: application/json; charset=utf-8
+1 < cache-control: no-cache
+{"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"104.0.5112.79","chrome":{"chromedriverVersion":"104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307})","userDataDir":"C:\\Users\\UNIT\\AppData\\Local\\Temp\\scoped_dir24420_2112984990"},"goog:chromeOptions":{"debuggerAddress":"localhost:60517"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"683f8a537fcba3add61602bebf5688e6"}}
+
+22:33:56.186 [ForkJoinPool-1-worker-3] DEBUG c.i.k.d.chromedriver_1659850433791 - init session id: 683f8a537fcba3add61602bebf5688e6
+22:33:56.703 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - request:
+2 > POST http://localhost:9515/session/683f8a537fcba3add61602bebf5688e6/url
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 32
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:9515
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.16)
+{"url":"https://www.pup.edu.ph"}
+
+22:34:10.521 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - response time in milliseconds: 13818.27
+2 < 200
+2 < Content-Length: 14
+2 < Content-Type: application/json; charset=utf-8
+2 < cache-control: no-cache
+{"value":null}
+
+22:34:10.591 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - request:
+3 > POST http://localhost:9515/session/683f8a537fcba3add61602bebf5688e6/window/maximize
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Content-Length: 2
+3 > Content-Type: application/json; charset=UTF-8
+3 > Host: localhost:9515
+3 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.16)
+{}
+
+22:34:10.732 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - response time in milliseconds: 139.76
+3 < 200
+3 < Content-Length: 51
+3 < Content-Type: application/json; charset=utf-8
+3 < cache-control: no-cache
+{"value":{"height":696,"width":1296,"x":-8,"y":-8}}
+
+22:34:10.887 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - request:
+4 > POST http://localhost:9515/session/683f8a537fcba3add61602bebf5688e6/execute/sync
+4 > Accept-Encoding: gzip,deflate
+4 > Connection: Keep-Alive
+4 > Content-Length: 82
+4 > Content-Type: application/json; charset=UTF-8
+4 > Host: localhost:9515
+4 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.16)
+{"script":"return document.querySelector(\".services-widget\").click()","args":[]}
+
+22:34:10.955 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - response time in milliseconds: 67.15
+4 < 200
+4 < Content-Length: 14
+4 < Content-Type: application/json; charset=utf-8
+4 < cache-control: no-cache
+{"value":null}
+
+22:34:11.003 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - request:
+5 > POST http://localhost:9515/session/683f8a537fcba3add61602bebf5688e6/execute/sync
+5 > Accept-Encoding: gzip,deflate
+5 > Connection: Keep-Alive
+5 > Content-Length: 169
+5 > Content-Type: application/json; charset=UTF-8
+5 > Host: localhost:9515
+5 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.16)
+{"script":"return document.evaluate(\"//a[contains(normalize-space(text()),'Faculty Member or Employee')]\", document, null, 9, null).singleNodeValue.click()","args":[]}
+
+22:34:15.072 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - response time in milliseconds: 4067.34
+5 < 200
+5 < Content-Length: 14
+5 < Content-Type: application/json; charset=utf-8
+5 < cache-control: no-cache
+{"value":null}
+
+22:34:15.082 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - request:
+6 > POST http://localhost:9515/session/683f8a537fcba3add61602bebf5688e6/execute/sync
+6 > Accept-Encoding: gzip,deflate
+6 > Connection: Keep-Alive
+6 > Content-Length: 161
+6 > Content-Type: application/json; charset=UTF-8
+6 > Host: localhost:9515
+6 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.16)
+{"script":"return document.evaluate(\"//a[normalize-space(text())='View Academic Year 2022-2023']\", document, null, 9, null).singleNodeValue.click()","args":[]}
+
+22:34:15.930 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - response time in milliseconds: 848.12
+6 < 200
+6 < Content-Length: 14
+6 < Content-Type: application/json; charset=utf-8
+6 < cache-control: no-cache
+{"value":null}
+
+22:34:15.983 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - request:
+7 > GET http://localhost:9515/session/683f8a537fcba3add61602bebf5688e6/url
+7 > Accept-Encoding: gzip,deflate
+7 > Connection: Keep-Alive
+7 > Host: localhost:9515
+7 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.16)
+
+22:34:16.146 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - response time in milliseconds: 162.03
+7 < 200
+7 < Content-Length: 49
+7 < Content-Type: application/json; charset=utf-8
+7 < cache-control: no-cache
+{"value":"https://www.pup.edu.ph/about/calendar"}
+
+22:34:16.159 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - request:
+8 > DELETE http://localhost:9515/session/683f8a537fcba3add61602bebf5688e6/window
+8 > Accept-Encoding: gzip,deflate
+8 > Connection: Keep-Alive
+8 > Host: localhost:9515
+8 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.16)
+
+22:34:16.316 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - response time in milliseconds: 156.60
+8 < 200
+8 < Content-Length: 12
+8 < Content-Type: application/json; charset=utf-8
+8 < cache-control: no-cache
+{"value":[]}
+
+22:34:16.319 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - request:
+9 > DELETE http://localhost:9515/session/683f8a537fcba3add61602bebf5688e6
+9 > Accept-Encoding: gzip,deflate
+9 > Connection: Keep-Alive
+9 > Host: localhost:9515
+9 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.16)
+
+22:34:16.491 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - response time in milliseconds: 171.32
+9 < 200
+9 < Content-Length: 14
+9 < Content-Type: application/json; charset=utf-8
+9 < cache-control: no-cache
+{"value":null}
+
+22:34:16.492 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate.shell.Command - closing command: chromedriver_1659850433791
+22:34:16.500 [chromedriver_1659850433791] WARN  com.intuit.karate.shell.Command - exit code was non-zero: 1 - [C:/Program Files/Google/Chrome/Application/chromedriver.exe, --port=9515, --user-data-dir=C:\Users\UNIT\Documents\GitHub\AutomationTesting\target\chromedriver_1659850433791]
+22:34:16.500 [chromedriver_1659850433791] DEBUG com.intuit.karate.shell.Command - console readers complete
+22:34:16.708 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/examples/users/muyrong3_1/AcademicYear.feature
